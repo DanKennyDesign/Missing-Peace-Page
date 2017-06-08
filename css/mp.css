@@ -1,0 +1,163 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 938px) {
+  .container {
+    max-width: 900px;
+  }
+}
+.container-narrow,.container > hr {
+  margin: 30px 0;
+}
+
+.thrombone{
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  box-sizing: content-box;
+}
+
+.thrombone img{
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+}
+
+.thrombone h1{
+  font-size: 45px;
+  letter-spacing: 1px;
+  color: white;
+  position: absolute;
+  left: 0pc;
+  bottom: 22%;
+  line-height:60px;
+
+}
+
+h1 > span {
+  padding: 10px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+ 
+}
+
+.thrombone h3{
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  left: 0pc;
+  bottom: 12%;
+  margin: 0px;
+}
+
+h3 > span {
+  padding: 10px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+ 
+}
+
+  
+
+.col-sm-4 {
+  text-align: center;
+  /*this only applies when stacked on the thinnest screen format (see media queries below)*/
+  margin-bottom: 10px;
+}
+
+.col-md-12 > h2{
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.col-sm-4 > .card{
+  height: 100%;
+  background: #ededed;
+  padding: 10px;
+}
+
+
+.col-sm-4 > p{
+  font-size: 15px;
+}
+
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 938px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .row {
+    margin-bottom: 10px;
+  }
+
+  .col-sm-4{
+    margin-bottom: none;
+  }
+
+}
+
+@media screen and (max-width: 938px) {
+    .thrombone h3 {
+    display:none;
+  }
+
+  .thrombone h1 {
+    bottom: 10%;
+  }
+}
